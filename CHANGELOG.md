@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.14.1-fork.1] - 2026-07-26
+
+### Fixed
+- Restore synchronization on Home Assistant 2026.6 and newer by passing the
+  required `bluez` backend options when constructing Bleak 3.x's private
+  `BleakClientBlueZDBus` client. Older Bleak constructor signatures remain
+  supported.
+
 ## [0.14.0] - 2026-06-29
 
 ### Added
